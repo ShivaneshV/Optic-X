@@ -106,6 +106,8 @@ class NeuralNetwork:
         current_A = X
 
         # Hidden dense layers + activations
+        # e.g., layer 1: (batch_size, 784) x (784, 256) -> (batch_size, 256)
+        #       layer 2: (batch_size, 256) x (256, 128) -> (batch_size, 128)
         for l in range(1, self.num_layers):
             W = self.params[f"W{l}"]
             b = self.params[f"b{l}"]
