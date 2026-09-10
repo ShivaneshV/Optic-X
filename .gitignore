@@ -1,0 +1,32 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Large Datasets & raw CSVs
+DataSets/
+*.csv
+*.tsv
+data/*.csv
+
+# Cached preprocessed arrays (can be re-generated)
+data/cache/
+*.npz
+!artifacts/*.npz
+!artifacts/*.png
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
