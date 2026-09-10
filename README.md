@@ -125,6 +125,8 @@ python demo.py --num_samples 5
 
 Displays predictions, ground truth, and top-3 softmax confidence probabilities on random unseen test samples.
 
+*Tip: To inspect individual canonical samples for all 35 characters, see the exported images in `sample_test_images/`.*
+
 ---
 
 ## Documentation
