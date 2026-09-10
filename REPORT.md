@@ -240,3 +240,5 @@ This project successfully demonstrates that a multilayer perceptron constructed 
 2. **Domain Nuance:** Identifying and correcting the EMNIST transposition quirk ensured that features represent genuine spatial handwriting properties.
 3. **Capacity Balance:** The $784 \rightarrow 256 \rightarrow 128 \rightarrow 35$ topology paired with He initialization and Momentum SGD achieved rapid convergence (**86.93% test accuracy** in under 20 seconds on CPU).
 4. **Transparent Evaluation:** Complete classification metrics, full $35 \times 35$ confusion matrix rendering, and deep morphological error inspection prove the system's reliability and reveal the natural perceptual boundaries of handwritten optical character recognition.
+
+*Hardware & Runtime Note: The complete 25-epoch training sequence across 35,000 samples executes in approximately 18 seconds on standard CPU hardware, demonstrating the efficiency of fully vectorized NumPy array operations.*
